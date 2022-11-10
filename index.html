@@ -1,155 +1,98 @@
-<!DOCTYPE html>
-<!-- saved from url=(0040)https://moonlogsshop.herokuapp.com/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- saved from url=(0033)https://moonlogsshop.herokuapp.com/login.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>moonlogsshop</title>
+    <link href="./index_files/css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moonlogsshop</title>
-    <link rel="shortcut icon" href="https://drklt5.es/assets/img/favicon.ico">
-    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
-    <link rel="stylesheet" href="./index_files/bootstrap-custom.css">
-    <link rel="stylesheet" href="./index_files/main.css">
-    <link rel="stylesheet" href="./index_files/flat.css">
-    <link rel="stylesheet" href="./index_files/midnight.css">
-    <script src="./index_files/jquery-1.11.1.min.js.download"></script>
-    <script src="./index_files/bootstrap.min.js.download"></script>
-    <!-- <script src="./asset/js/easylogin.js"></script>
-    <script src="./asset/js/main.js"></script> -->
-    <link rel="stylesheet" href="./index_files/amaran.min.css">
-    <script src="./index_files/jquery.amaran.min.js.download"></script>
-    <script>
-        EasyLogin.options = {
-            ajaxUrl: 'https://drklt5.es/ajax.php',
-            lang: {
-                "error": "Oops! Something went wrong.",
-                "connecting": "Connecting to ",
-                "changes_saved": "Your settings have been saved.",
-                "pass_changed": "Your password has been changed!",
-                "no_messages": "You don't have any messages yet.",
-                "loading": "<div class=\"loadersmall\"><\/div>",
-                "loadding": "<div class=\"spinner-border\" role=\"status\">\r\n  <span class=\"sr-only\">Loading...<\/span>\r\n<\/div>",
-                "message_sent": "Your message has been sent to the Webmaster.",
-                "comment": " Comment",
-                "comments": " Comments"
-            },
-            debug: 1,
-        };
-    </script>
+    
+    </head>
+    <body>
+        <div id="container">
+        <h2>Login</h2>
+            <form action="https://moonlogsshop.herokuapp.com/home.html" method="post">
+                <input type="email" name="user_name" placeholder="Enter Your Email"><br>
+                <input type="password" name="password" placeholder="Enter Your Password"><br>
+                <input type="submit" value="login"><br><br>
+            </form>
+            <h3>Create a New Account <a href="https://moonlogsshop.herokuapp.com/signup.html">Register</a></h3>
+        </div>
     <style>
-        .button {
-          background-color: #475055;
-          border: none;
-          color: white;
-          padding: 10px 15px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 20px;
-          margin: 4px 2px;
-          cursor: pointer;
-        }
-      </style>
-
-</head>
-
-<body class="authentication-bg">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-offset-4 col-md-4 login-background">
-                <div style="background-color: #212029;margin-bottom: 20px;">
-                    <center><img src="./index_files/_logo.png" style="margin-bottom: -25px; width: 8rem; height: 8rem;" alt=""></center>
-
-                </div>
-
-                <div class="padder">
-                    <h3 class="page-header" style=" margin-top: 50px; color: #000; ">Login area</h3>
-                                        <form class="clearfix ajax-form" id="login">
-                        <div class="form-group">
-                            <label for="username">Email</label>
-                            <input type="email" name="email" id="username" class="form-control">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="password">Password </label>
-                            <!-- <span class="pull-right"> <a href="reminder">Forgot password?</a></span> -->
-                            <input type="password" name="password" id="password" class="form-control">
-                        </div>
-                        <hr>
-                        <!-- <div id="actionButton">
-                            <div class="form-group recaptcha">
-                                <img src="session.php">
-                                <input type="text" name="phrase" autocomplete="off">
-                            </div>
-                            <script>
-                                function ReloadCaptcha() {
-                                    $("#actionButton").load('captcha.php');
-                                }
-                            </script>
-                        </div> -->
-                        <div class="form-group">
-                            <a href="https://moonlogsshop.herokuapp.com/home.html" class="button">Login</a>
-
-                           <!-- <button type="submit" name="login_user" class="btn btn-lg" style="background: #212029; color: #fff;">Log in</button> -->
-                        </div>
-                        <hr>
-                        <div class="form-group">
-
-                            <a href="https://moonlogsshop.herokuapp.com/signup.html" class="btn btn-block" style="background: #212029; color: #fff;">Sign up</a>
-                        </div>
-
-                        <div class="clearfix"></div>
-
-
-                    </form>
-                </div>
-            </div>
-        </div>
-        <script>
-            // $(document).ready(function() {
-            //     $("#actionButton").load("captcha.php");
-            //     $.ajaxSetup({
-            //         cache: false
-            //     });
-            // });
-        </script>
-
-    </div>
-    <div class="footer">
-        <div class="container">
-
-            <!-- <p style="color: #fff;">© 2022 moonlogsshop | Build:61DE141D6C84B </p> -->
-        </div>
-    </div>
+        body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #181818;
+    font-family: Roboto;
+    padding: 0;
+    margin: 0;
+}
+#container
+{
+    height: 400px;
+    width:300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 13px rgba(0,0,0,0.7),-2px -2px 10px rgba(255,255,255,0.1);
+    box-sizing: border-box;
+    padding: 20px;
+}
+#container h2
+{
+    text-align: center;
+    color:#e2e2e2;
+}
+input[type="email"],input[type="password"]
+{
+    background: transparent;
+    outline: none;
+    border:none;
+    box-shadow: inset 9px 9px 14px rgba(0,0,0,0.7), inset -2px -2px 10px rgba(255,255,255,0.1);
+    height:50px;
+    width:250px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 0px 25px;
+    margin: 10px 0px;
+    color:#e73151;
+}
+input[type="email"]::placeholder,input[type="password"]::placeholder
+{
+    color:#e2e2e291;
+}
+input[type="submit"]
+{
+    background: transparent;
+    outline: none;
+    border:none;
+    height: 50px;
+    width:230px;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.7), -2px -2px 5px rgba(255,255,255,0.1);
+    border-radius: 60px;
+    box-sizing: border-box;
+    margin: 10px;
+    color:#e2e2e2;
+    cursor: pointer;
+}
+#container h3
+{
+    font-size: 12px;
+    text-align: center;
+    color:#e2e2e2;
+}
+#container h3 a
+{
+    text-decoration: none;
+    color:#e73151;
+    font-size: 15px;
+}
 
 
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="./index_files/firebase.js.download"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-  //apiKey: "AIzaSyAYtlCkDdp_ecNdJDJ-4kAbMx5xrB5dN7o",
- // authDomain: "logscity.firebaseapp.com",
- // projectId: "logscity",
-  //storageBucket: "logscity.appspot.com",
- // messagingSenderId: "748498048490",
- // appId: "1:748498048490:web:519de512e20130a5b48e93"
- apiKey: "AIzaSyAv--dZT5vQrtciYTHFcPfsY98CDScT6CE",
- authDomain: "moonlogsshop-dfa10.firebaseapp.com",
- projectId: "moonlogsshop-dfa10",
- storageBucket: "moonlogsshop-dfa10.appspot.com",
- messagingSenderId: "970161819182",
- appId: "1:970161819182:web:252cc299adf1a1d7fc59bf",
- measurementId: "G-K9C5XKZND7"
-};
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-<script src="./index_files/login.js.download"></script>
+    </style>
+    
+
 </body></html>
