@@ -1,0 +1,21 @@
+const login = document.getElementById('login');
+
+login.addEventListener('submit', e => {
+    e.preventDefault();
+
+    let email = login.email.value;
+    let pass = login.password.value;
+
+    if (email && pass ){
+        firebase.auth().signInWithEmailAndPassword(email,pass)
+            .then(() => {
+                alert('Login Successful');
+                window.location.href = 'home.html';
+            })
+            .catch(error => alert(error.message));
+    }
+    else {
+        alert('Both fields are required');
+    }
+
+})

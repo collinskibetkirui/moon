@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://ctroniqlogs.herokuapp.com/balance.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkNetShop</title>
+    <link rel="shortcut icon" href="https://drklt5.es/assets/img/favicon.ico">
+    <link href="./balance_files/icon" rel="stylesheet">
+    <link href="./balance_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="./balance_files/theme.css">
+    <link rel="stylesheet" href="./balance_files/custom.css">
+    <script src="./balance_files/jquery.min.js.download"></script>
+    <script src="./balance_files/easylogin.js.download"></script>
+    <script src="./balance_files/main.js.download"></script>
+    <link rel="stylesheet" href="./balance_files/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./balance_files/amaran.min.css">
+    <script src="./balance_files/jquery.amaran.min.js.download"></script>
+    <script>
+        EasyLogin.options = {
+            ajaxUrl: 'https://drklt5.es/ajax.php',
+            lang: {
+                "error": "Oops! Something went wrong.",
+                "connecting": "Connecting to ",
+                "changes_saved": "Your settings have been saved.",
+                "pass_changed": "Your password has been changed!",
+                "no_messages": "You don't have any messages yet.",
+                "loading": "<div class=\"loadersmall\"><\/div>",
+                "loadding": "<div class=\"spinner-border\" role=\"status\">\r\n  <span class=\"sr-only\">Loading...<\/span>\r\n<\/div>",
+                "message_sent": "Your message has been sent to the Webmaster.",
+                "comment": " Comment",
+                "comments": " Comments"
+            },
+            debug: 1,
+        };
+    </script>
+    <style>
+        .authentication-bg {
+            background-image: url(assets/img/bg-pattern-dark.png);
+            background-size: cover;
+            background-position: center;
+            background-color: rgb(52, 58, 64);
+        }
+    </style>
+
+</head>
+
+<body class="authentication-bg">
+    <div class="layout layout-nav-top">
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+           <a class="navbar-brand" href="https://ctroniqlogs.herokuapp.com/home.html">Dashboard
+                <img alt="Pipeline" src="./balance_files/_logo.png" style="width: 32px;">
+            </a>
+            <div class="d-flex align-items-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-block d-lg-none ml-2">
+                    <div class="dropdown">
+                        <a href="https://ctroniqlogs.herokuapp.com/balance.html#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img alt="Image" src="./balance_files/user.png" class="avatar">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/ticket.html">Ticket</a>
+                            <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/purchased.html">Purchased</a>
+                            <a href="https://ctroniqlogs.herokuapp.com/settings.html" class="dropdown-item">Settings</a>
+                            <a href="https://ctroniqlogs.herokuapp.com/auth/logout" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse justify-content-between" id="navbar-collapse">
+                <ul class="navbar-nav" style="font-size: 15px !important;">
+                    
+                    <li class="nav-item ">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://ctroniqlogs.herokuapp.com/balance.html#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">USA BANK(full info)</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/huntington.html">Huntington Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/chaset.html">Chase Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/citi-log-full-info">Citi Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/pnc-log-full-info.html">PNC Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/woodforest-log-full-info.html">Woodforest Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/chime-log-full-info.html">Chime Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/nfcu-log-full-info.html">NFCU Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/bbva-log-full-info.html">BBVA Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/bb-t-log-full-info.html">BB&amp;T Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/boa-log-full-info.html">BOA Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/suntrust-log-full-info.html">Suntrust Log(full info) </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://ctroniqlogs.herokuapp.com/balance.html#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">CANADA BANK(full info)</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/scotia-bank-log-full-info.html">Scotia Bank Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/rbc-log-full-info.html">RBC Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/td-bank-canada-full-info.html">TD Bank Canada(full info) </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://ctroniqlogs.herokuapp.com/balance.html#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="nav-dropdown-2">UK BANK(full info)</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/llyod-bank-log-full-info.html">Llyod Bank Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/barclays-bank-log-full-info.html">Barclays Bank Log(full info) </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/hsbc-bank-log-full-info.html">HSBC Bank Log(full info) </a>
+                            </div>
+                        </div>
+                    </li>
+                  
+                  <li class="nav-item">
+                      <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/clonecards.html" style="font-size: 17px;">Clone Cards </a>
+                  </li>
+                    <li class="nav-item ">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://ctroniqlogs.herokuapp.com/balance.html#" data-toggle="dropdown" aria-expanded="true" aria-haspopup="true" id="nav-dropdown-2">OTHER TOOLS</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/cashapplogs.html">Cash App Logs </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/paypallogs.html">Paypal Logs</a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/chase-credit-card-info.html">Chase credit card info </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/discover-credit-card-info.html">Discover credit card info </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/usa-checks.html">USA Checks </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/canada-checks.html">Canada Checks </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/company-fullz-log.html">Company Fullz Log </a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/dump.html">DUMPS </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-link" href="https://ctroniqlogs.herokuapp.com/paypallogs.html">PAYPAL LOGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-link" href="https://ctroniqlogs.herokuapp.com/cashapplogs.html">CASH APP LOGS</a>
+                    </li>
+                </ul>
+                <div class="d-lg-flex align-items-center">
+                                                            <div class="dropdown mx-lg-2">
+                        <button class="btn btn-block dropdown-toggle" type="button" id="newContentButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #F06277; color: #fff;">
+                            Balance: 0.00$
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/bitcoin.html">Add Balance</a>
+                            <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/balance.html">Deposit history</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <div class="dropdown">
+                            <a href="https://ctroniqlogs.herokuapp.com/balance.html#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img alt="Image" src="./balance_files/user.png" class="avatar">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/ticket.html">Ticket</a>
+                                <a class="dropdown-item" href="https://ctroniqlogs.herokuapp.com/purchased.html">Purchased</a>
+                                <a href="https://ctroniqlogs.herokuapp.com/settings.html" class="dropdown-item">Settings</a>
+                                <a href="https://ctroniqlogs.herokuapp.com/auth/logout" class="dropdown-item">Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+
+          <div class="container mt-5">
+
+
+
+            <link href="./balance_files/jquery.dataTables.min.css" rel="stylesheet">
+            <script src="./balance_files/jquery.dataTables.min.js.download"></script>
+
+
+            <div class="row">
+              <div class="col-12 col-lg-12" style="padding-left: 0px;padding-right: 0px;">
+                <div class="card card-table">
+                  <div class="card-header">
+                    <div class="title">
+                      <div class="d-flex bd-highlight mb-3">
+                        <div class="mr-auto p-2 bd-highlight" style=" margin-left: -20px; "><span style="font-size: 22px;" class="display-4">Transactions:</span></div>
+                        <div class="p-2 bd-highlight">
+                          <span class="ml-auto">
+                            <a href="https://ctroniqlogs.herokuapp.com/bitcoin.html" class="btn btn-danger pull-right">Add Balance (Bitcoin)</a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body table-responsive">
+
+                    <div class="table-responsive">
+                      <table id="orders" class="display" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Date</th>
+                            <th>Sum</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                                                  </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+    #link {
+        width: 90%;
+        text-align: center;
+        border: none;
+        cursor: auto;
+    }
+
+    #copy {
+        border: none;
+        background: #fff;
+        cursor: copy;
+    }
+</style>
+<div class="modal fade" tabindex="-1" role="dialog" id="bitcoin" data-backdrop="static">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+                <h5 class="modal-title">Add Balance (Bitcoin)</h5>
+                <button type="button" class="close btn btn-round" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                </button>
+            </div>
+            <!--end of modal head-->
+            <div class="modal-body" style=" margin-top: -20px; ">
+                <!-- <form action="bitcoin_payment" class="ajax-form">
+                      <li class="list-group-item dz-error dz-complete dz-image-preview pb-3">
+                        <div class="form-row align-items-center">
+                          <div class="col-auto">
+                            <div class="avatar">
+                              <img src="https://drklt5.es/assets/img/bitcoin.png" style=" width: 40px; " class="avatar-img rounded" alt="green.svg">
+                            </div>
+                          </div>
+                          <div class="col" style="margin-top: 10px;">
+                            <h3 class="m-0">1 BTC = $42817.46</h3>
+                            <input type="hidden" name="processor" value="btc">
+                          </div>
+                        </div>
+                      </li>
+                      <div class="form-group mt-5">
+                        <label for="processor">Deposit amount $:</label>
+                        <input type="text" name="amount" id="dolar" class="form-control" style="font-size: 20px; height: 45px;" placeholder="min: $10.00, max: $3,000.00" autocomplete="off">
+                      </div>
+                      <div class="form-group">
+                        <label for="processor">Transaction amount:</label>
+                        <input type="text" name="amount-usd" id="btc" class="form-control" style="font-size: 20px; height: 45px;" readonly>
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-btn">
+                          <button name="btcSubmit" type="submit" name="submit" class="btn btn-danger btn-lg">Deposit</button>
+                        </span>
+                      </div>
+                    </form> -->
+                <div class="d-flex flex-colum text-center">
+                    <h6 class="h6 mb-4">Any amount sent to this address would be available in your wallet</h6>
+                </div>
+                <div class="mb-4">
+                    <center><img src="./balance_files/btc.png" alt=""></center>
+                </div>
+                <div class="mb-4">
+                    <input id="link" value="34tDjtLQB9dPUG8kTn1i1PqUZLQSKNdgYi" readonly="">
+                    <button id="copy" data-copytarget="#link">
+                        <i class="fa fa-clipboard" aria-hidden="true" data-copytarget="#link"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // functionality to copy text from inviteCode to clipboard
+
+        // trigger copy event on click
+        $('#copy').on('click', function(event) {
+            console.log(event);
+            copyToClipboard(event);
+        });
+
+        // event handler
+        function copyToClipboard(e) {
+            // alert('this function was triggered');
+            // find target element
+            var
+                t = e.target,
+                c = t.dataset.copytarget,
+                inp = (c ? document.querySelector(c) : null);
+            console.log(inp);
+            // check if input element exist and if it's selectable
+            if (inp && inp.select) {
+                // select text
+                inp.select();
+                try {
+                    // copy text
+                    document.execCommand('copy');
+                    inp.blur();
+
+                    // copied animation
+                    t.classList.add('copied');
+                    setTimeout(function() {
+                        t.classList.remove('copied');
+                    }, 1500);
+                } catch (err) {
+                    //fallback in case exexCommand doesnt work
+                    alert('please press Ctrl/Cmd+C to copy');
+                }
+
+            }
+
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#orders').DataTable({
+                "aaSorting": [
+                    [0, "desc"]
+                ],
+
+                "pageLength": 50,
+                "bLengthChange": false,
+            });
+
+        });
+    </script>
+
+</div>
+          </div>
+        </div>
+
+        <!-- Required vendor scripts (Do not remove) -->
+        <script src="./balance_files/btc.js.download"></script>
+        <script type="text/javascript" src="./balance_files/popper.min.js.download"></script>
+        <script type="text/javascript" src="./balance_files/bootstrap.js.download"></script>
+
+        <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+        <!-- Autosize - resizes textarea inputs as user types -->
+        <script type="text/javascript" src="./balance_files/autosize.min.js.download"></script>
+        <!-- Flatpickr (calendar/date/time picker UI) -->
+        <script type="text/javascript" src="./balance_files/flatpickr.min.js.download"></script>
+
+        <!-- Shopify Draggable - drag, drop and sort items on page -->
+        <script type="text/javascript" src="./balance_files/draggable.bundle.legacy.js.download"></script>
+        <script type="text/javascript" src="./balance_files/swap-animation.js.download"></script>
+        <!-- Dropzone - drag and drop files onto the page for uploading -->
+
+        <script type="text/javascript" src="./balance_files/list.min.js.download"></script>
+
+
+        <!-- This appears in the demo only - demonstrates different layouts -->
+        <style type="text/css">
+          .layout-switcher {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(73px);
+            color: #fff;
+            transition: all .35s ease;
+            background: #343a40;
+            border-radius: .25rem .25rem 0 0;
+            padding: .75rem;
+            z-index: 999;
+          }
+
+          .layout-switcher:not(:hover) {
+            opacity: .95;
+          }
+
+          .layout-switcher:not(:focus) {
+            cursor: pointer;
+          }
+
+          .layout-switcher-head {
+            font-size: .75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+
+          .layout-switcher-head i {
+            font-size: 1.25rem;
+            transition: all .35s ease;
+          }
+
+          .layout-switcher-body {
+            transition: all .55s ease;
+            opacity: 0;
+            padding-top: .75rem;
+            transform: translateY(24px);
+            text-align: center;
+          }
+
+          .layout-switcher:focus {
+            opacity: 1;
+            outline: none;
+            transform: translateX(-50%) translateY(0);
+          }
+
+          .layout-switcher:focus .layout-switcher-head i {
+            transform: rotateZ(180deg);
+            opacity: 0;
+          }
+
+          .layout-switcher:focus .layout-switcher-body {
+            opacity: 1;
+            transform: translateY(0);
+          }
+
+          .layout-switcher-option {
+            width: 72px;
+            padding: .25rem;
+            border: 2px solid rgba(255, 255, 255, 0);
+            display: inline-block;
+            border-radius: 4px;
+            transition: all .35s ease;
+          }
+
+          .layout-switcher-option.active {
+            border-color: #007bff;
+          }
+
+          .layout-switcher-icon {
+            width: 100%;
+            border-radius: 4px;
+          }
+
+          .layout-switcher-body:hover .layout-switcher-option:not(:hover) {
+            opacity: .5;
+            transform: scale(0.9);
+          }
+
+          @media all and (max-width: 990px) {
+            .layout-switcher {
+              min-width: 250px;
+            }
+          }
+
+          @media all and (max-width: 767px) {
+            .layout-switcher {
+              display: none;
+            }
+          }
+        </style>
+        <div class="layout-switcher" tabindex="1">
+          <div class="layout-switcher-head d-flex justify-content-between">
+            <span>Select Layout</span>
+            <i class="material-icons">arrow_drop_up</i>
+          </div>
+          <div class="layout-switcher-body">
+
+          </div>
+        </div>
+        <script src="./balance_files/vendor.bundle.base.js.download"></script>
+        <!-- endinject -->
+        <!-- Plugin js for this page -->
+        <script src="./balance_files/jquery.barrating.min.js.download"></script>
+        <script src="./balance_files/Chart.min.js.download"></script>
+        <script src="./balance_files/jquery.flot.js.download"></script>
+        <script src="./balance_files/jquery.flot.resize.js.download"></script>
+        <script src="./balance_files/jquery.flot.categories.js.download"></script>
+        <script src="./balance_files/jquery.flot.fillbetween.js.download"></script>
+        <script src="./balance_files/jquery.flot.stack.js.download"></script>
+        <!-- End plugin js for this page -->
+        <!-- inject:js -->
+        <script src="./balance_files/off-canvas.js.download"></script>
+        <script src="./balance_files/hoverable-collapse.js.download"></script>
+        <script src="./balance_files/misc.js.download"></script>
+        <script src="./balance_files/settings.js.download"></script>
+        <script src="./balance_files/todolist.js.download"></script>
+        <!-- endinject -->
+        <!-- Custom js for this page -->
+        <script src="./balance_files/dashboard.js.download"></script>
+        
+
+
+        </div><div id="draggable-live-region" aria-relevant="additions" aria-atomic="true" aria-live="assertive" role="log" style="position: fixed; width: 1px; height: 1px; top: -1px; overflow: hidden;"></div>
+ <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+   (function(){
+   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+   s1.async=true;
+   s1.src='https://embed.tawk.to/62e401cf54f06e12d88bf3eb/default';
+   s1.charset='UTF-8';
+   s1.setAttribute('crossorigin','*');
+   s0.parentNode.insertBefore(s1,s0);
+   })();
+   </script>
+   <!--End of Tawk.to Script--></body></html>

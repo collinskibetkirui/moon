@@ -1,0 +1,16 @@
+/**
+ * /* header
+ *
+ * @format
+ */
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link.m-link {
+    display: none !important;
+  }
+}
+
+.maybtn {
+  background-color: #f06277 !important;
+  color: #fff !important;
+}
